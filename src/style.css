@@ -1,0 +1,14 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
+  top: 35%;
+  right: 2%;
+}
+
+nav a {
+  font-family: "Roboto", sans-serif;
+}
