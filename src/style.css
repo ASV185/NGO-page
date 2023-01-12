@@ -50,3 +50,15 @@ p {
 .card {
   transform: translateY(-160%);
 }
+
+.articles {
+  transform: translateY(-550%);
+}
+
+.common-questions {
+  transform: translateY(-10%);
+}
+
+.faq-section {
+  transform: translateY(-140%);
+}
