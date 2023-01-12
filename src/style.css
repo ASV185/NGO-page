@@ -17,3 +17,19 @@ p {
   font-family: "Work Sans", sans-serif;
   font-size: 22px;
 }
+
+.assist-documents-applications-services {
+  transform: translate(120px, 50%);
+}
+
+.citizenship-service {
+  transform: scale(1, 0.5) translate(30%, -50%);
+}
+
+.law-representation {
+  transform: scale(0.5) translate(100%, -500%);
+}
+
+.assist-victims-of-domestic-violence-service {
+  transform: translate(100%, -190%);
+}
