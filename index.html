@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,9 +17,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css" />
     <title>DMRS Landing Page</title>
 </head>
+<style>
+    h1 {
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        font-size: 60px;
+        position: absolute;
+        text-shadow: 2px 2px 2px black;
+        box-shadow: 2px 2px 2px black;
+        top: 35%;
+        right: 2%;
+    }
+
+    header img:hover {
+        cursor: pointer;
+    }
+
+    .bi-facebook {
+        position: fixed;
+        color: rgb(41, 38, 38);
+        right: 5%;
+        top: 70%;
+        font-size: 2rem;
+    }
+
+    .bi-instagram {
+        position: fixed;
+        color: rgb(41, 38, 38);
+        right: 5%;
+        top: 80%;
+        font-size: 2rem;
+    }
+
+    .who-we-are img:hover {
+        filter: grayscale(80%);
+        cursor: pointer;
+    }
+
+    .support-section a {
+        text-decoration: none;
+        border: 2px solid black;
+        padding: 5px 7px;
+        margin: 5px;
+        border-radius: 2em;
+        color: black;
+    }
+
+    nav a {
+        font-family: "Roboto", sans-serif;
+    }
+
+    p {
+        font-family: "Work Sans", sans-serif;
+        font-size: 22px;
+    }
+
+    .content-text {
+        scroll-snap-type: x mandatory;
+    }
+
+    .assist-documents-applications-services {
+        transform: translate(120px, 50%);
+    }
+
+    .citizenship-service {
+        transform: scale(1, 0.5) translate(30%, -50%);
+    }
+
+    .law-representation {
+        transform: scale(0.5) translate(100%, -500%);
+    }
+
+    .assist-victims-of-domestic-violence-service {
+        transform: translate(100%, -190%);
+    }
+
+    .card {
+        transform: translateY(-160%);
+    }
+
+    .articles {
+        transform: translateY(-550%);
+    }
+
+    .donate-section {
+        transform: translate(40%, -400%);
+        margin: 10rem;
+    }
+
+    .donate-section a {
+        transform: translate(100%, -5%);
+        font-size: 2rem;
+    }
+</style>
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -46,33 +139,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#services">Services</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Detained
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Legal Orientation Program</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#article-section">News</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Non-Detained
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Adminstration</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#donate-section">Donate</a>
                         </li>
                     </ul>
                 </div>
@@ -87,6 +158,18 @@
                 <br>
                 & Refugee Services, Inc.
             </h1>
+            <section>
+                <div class="social-media justify-content-evenly">
+                    <a href="https://www.facebook.com/DMRSInc" class="facebook-button" title="facebook-button"
+                        target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dmrs_elpaso/?hl=en" class="instagram-button" target="_blank"
+                        title="instagram-button">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </section>
         </header>
         <section class="who-we-are m-3" id="who-we-are">
             <div class="row m-5">
@@ -97,26 +180,33 @@
                 <div class="col-6">
                     <h2>
                         Who We Are
+                    </h2>
+                    <section class="about-us-section">
                         <p class="p-2">
                             Diocesan Migrant & Refugee Services, Inc. is a non-profit organization that has assist many
                             detained and
-                            non-detained people with low-cost services.
-                            <br>
-                            <br>
-                            DMRS is one of many non-profit organizations that see many detained people and have the
-                            ability
-                            to
-                            informed them of their right by Know Your Rights presentations.
-                            <br>
-                            <br>
-                            DMRS has given various services such as legal representation, assistance in documents and
-                            applications,
-                            domestic violence cases, and Know Your Rights presentations to those detained.
+                            non-detained people with low-cost legal immigration services. DMRS has provided services to
+                            migrants since 1986, and serves Far West Texas and New Mexico.
                         </p>
-                        <a>
+                    </section>
+                    <section class="support-section">
+                        <h4 class="mb-4">
                             Find Out How You Can Help
+                        </h4>
+                        <a href="#" class="donate-button" title="donate-button">
+                            Donate
                         </a>
-                    </h2>
+                        <a href="#" class="support-button" title="support-button">
+                            Support Us
+                        </a>
+                        <a href="#" class="volunteer-button" title="volunteer-button">
+                            Volunteer
+                        </a>
+                        <a href="#" class="legal-internships-employment-button"
+                            title="legal-internships-employment-button">
+                            Legal Internships & Employment
+                        </a>
+                    </section>
                 </div>
             </div>
         </section>
@@ -181,7 +271,7 @@
                                 Title
                                 42"</p>
                             <a href="https://www.borderreport.com/immigration/border-advocates-dial-up-support-for-ending-remain-in-mexico-and-title-42/?fbclid=IwAR3cib66bjI6-N6aopPTqYR83xOndD-XEgKvVdR4vP2E2hW4KIbunNSE2Aw"
-                                class="btn btn-primary">Learn more</a>
+                                target="_blank" class="btn btn-primary">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +283,7 @@
                             <p class="card-text">"'Thanks, and God bless you': Asylum-seekers allowed to enter U.S.
                                 after..."</p>
                             <a href="https://www.texastribune.org/2022/08/26/texas-migrants-asylum-mpp-remain-in-mexico-ends/?fbclid=IwAR3Rs8mA-UgYkqsq9dvYZyvGlQXfKQ732UZ524y9Qrjz2tggk_9TN4rO4fs"
-                                class="btn btn-primary">Learn more</a>
+                                target="_blank" class="btn btn-primary">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +295,7 @@
                             <p class="card-text">"Immigration experts, advocates weigh in on Biden's first presidential
                                 border visit"</p>
                             <a href="https://www.kvue.com/article/news/special-reports/at-the-border/immigration-experts-advocates-biden-border-visit/269-3eac6e9d-03bf-4b7e-91f8-e3b90674c282?fbclid=IwAR2qz25ssF80k0aj4sEx9EO11eJGdDicb2D7YfsA8OZV6Zb6-u5UHpzkV2Y"
-                                class="btn btn-primary">Learn more</a>
+                                target="_blank" class="btn btn-primary">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -218,58 +308,16 @@
                                 out"
                             </p>
                             <a href="https://www.ktsm.com/news/migrant-shelters-seeing-less-migrants-but-some-continue-to-camp-out/?fbclid=IwAR3_0QGxZRm4Q4hXJM6Fhsm84yuAYvomcRuCjovXNBAQj_zwlTncOhMBQRU"
-                                class="btn btn-primary">Learn more</a>
+                                target="_blank" class="btn btn-primary">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="faq-section">
-            <h2 class="common-questions text-center p-4 m-3">FAQ</h2>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="donate-section" id="donate-section">
+            <h2>Please Help Support Us</h2>
+            <a href="https://dmrsep.app.neoncrm.com/forms/dmrs-you-belong-campaign" target="_blank"
+                class="btn btn-primary" title="Donate Today" id="donate-today">Donate</a>
         </section>
     </div>
     <footer class="text-center bg-dark">
@@ -280,7 +328,8 @@
                 </a>
                 <br>
                 <span>
-                    by Amanda Ventura, images from Greg Bulla and Grant Whitty.
+                    by Amanda Ventura, images from Greg Bulla, Katie Moum, Saif71.com, Tingey Injury Law Firm, Bernd
+                    Klutsch, Global Residence Index, Grant Whitty.
                     January 2023 SheCodes Challenge (not original website)
                 </span>
             </div>
