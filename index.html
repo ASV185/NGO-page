@@ -20,13 +20,22 @@
     <title>DMRS Landing Page</title>
 </head>
 <style>
+    :root {
+        --primary-color: black;
+        --secondary-color: white;
+        --accent-color: rgb(41, 38, 38);
+        --primary-font-family: "Josefin Sans", sans-serif;
+        --secondary-font-family: "Roboto", sans-serif;
+        --accent-font-family: "Work Sans", sans-serif;
+    }
+
     h1 {
-        font-family: "Josefin Sans", sans-serif;
-        color: white;
+        font-family: var(--primary-font-family);
+        color: var(--secondary-color);
         font-size: 60px;
         position: absolute;
-        text-shadow: 2px 2px 2px black;
-        box-shadow: 2px 2px 2px black;
+        text-shadow: 2px 2px 2px var(--primary-color);
+        box-shadow: 2px 2px 2px var(--primary-color);
         top: 35%;
         right: 2%;
     }
@@ -37,7 +46,7 @@
 
     .bi-facebook {
         position: fixed;
-        color: rgb(41, 38, 38);
+        color: var(--accent-color);
         right: 5%;
         top: 70%;
         font-size: 2rem;
@@ -45,7 +54,7 @@
 
     .bi-instagram {
         position: fixed;
-        color: rgb(41, 38, 38);
+        color: var(--accent-color);
         right: 5%;
         top: 80%;
         font-size: 2rem;
@@ -58,19 +67,19 @@
 
     .support-section a {
         text-decoration: none;
-        border: 2px solid black;
+        border: 2px solid var(--primary-color);
         padding: 5px 7px;
         margin: 5px;
         border-radius: 2em;
-        color: black;
+        color: var(--primary-color);
     }
 
     nav a {
-        font-family: "Roboto", sans-serif;
+        font-family: var(--secondary-font-family);
     }
 
     p {
-        font-family: "Work Sans", sans-serif;
+        font-family: var(--accent-font-family);
         font-size: 22px;
     }
 
